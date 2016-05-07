@@ -8,6 +8,9 @@
   <remote  name="github"
            fetch="https://github.com/Master-Branch/" />
 
+  <remote name="pure"
+           fetch="https://github.com/PureNexusProject/" /> 
+
   <default revision="master"
            remote="aosp"
            sync-j="4" />
@@ -473,5 +476,10 @@
   <project path="device/moto/shamu" name="device_moto_shamu" remote="github" revision="master" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="vendor/moto" name="vendor_moto" remote="github" revision="master" /> 
+
+  <!--Angler -->
+  <project path="device/huawei/angler" name="device_huawei_angler" remote="github" revision="master" />
+  <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" clone-depth="1" />
+  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="pure" revision="mm" />
 
 </manifest>
